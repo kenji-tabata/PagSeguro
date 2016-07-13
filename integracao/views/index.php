@@ -83,7 +83,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Item</th>
-                                        <th></th>
+                                        <th>Opções</th>
                                         <th>Valor</th>
                                     </tr>
                                 </thead>
@@ -91,19 +91,31 @@
                                     <tr>
                                         <td>1</td>
                                         <td>Laudo Plus - Georgi Facello</td>
-                                        <td></td>
+                                        <td>
+                                            <a href="#" title="Remover" class="text-danger">
+                                                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                            </a>
+                                        </td>
                                         <td>R$ 43,00</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Laudo Plus - Marcel Facello</td>
-                                        <td></td>
+                                        <td>
+                                            <a href="#" title="Remover" class="text-danger">
+                                                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                            </a>
+                                        </td>
                                         <td>R$ 43,00</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Laudo Plus - Mara Facello</td>
-                                        <td></td>
+                                        <td>
+                                            <a href="#" title="Remover" class="text-danger">
+                                                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                            </a>
+                                        </td>
                                         <td>R$ 43,00</td>
                                     </tr>
                                 </tbody>
