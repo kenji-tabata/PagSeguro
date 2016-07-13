@@ -17,16 +17,20 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="views/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#" title="Dom Brasil">
-                    <img alt="Brand" src="imagens/logo.png">
+                    <img alt="Brand" src="views/imagens/logo.png">
                 </a>
-                <p class="navbar-text navbar-right">&nbsp;</p>
+                <p class="navbar-text navbar-right">
+                    <a href="#" title="Voltar">
+                        <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Voltar
+                    </a>
+                </p>
             </div>
         </nav>
                     
@@ -41,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="imagens/landing.jpg" class="img-responsive" alt="perfil completo"/>
+                    <img src="views/imagens/landing.jpg" class="img-responsive" alt="perfil completo"/>
                 </div>
                 <div class="col-md-7">
                     <p class="text-justify">
@@ -72,35 +76,56 @@
                     <div class="page-header">
                         <h3>Resumo do pedido!</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-3">
-                            <p><strong>Item</strong></p>
-                            <p>Laudo Plus</p>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <p><strong>Valor</strong></p>
-                            <p>R$ 43,00</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-4 text-center">
-                                <form id="form-comprar-laudo" method="POST" action="action.php">
-                                    <div class="input-group">
-                                        <input type="hidden" id="hidden-nome" value="Georgi Facello" name="hidden-nome">
-                                        <input type="hidden" id="hidden-tipo-produto" value="laudo-plus" name="hidden-codigo-produto">
-                                        <input type="hidden" id="hidden-id-pesquisado" value="1" name="hidden-id-pesquisado">
-                                        <input type="text" id="txt-email" class="form-control" value="" placeholder="E-mail" name="txt-email">
-                                        <span class="input-group-btn">
-                                            <button id="comprar-plus" class="btn btn-primary">Compre agora!</button>
-                                        </span>
-                                    </div>
-                                    <div class="mensagem hidden col-md-12" role="alert"></div>
-                                </form>
-                            </div>
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="table-responsive">
+                            <table class="table table-striped table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Item</th>
+                                        <th></th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Laudo Plus - Georgi Facello</td>
+                                        <td></td>
+                                        <td>R$ 43,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Laudo Plus - Marcel Facello</td>
+                                        <td></td>
+                                        <td>R$ 43,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Laudo Plus - Mara Facello</td>
+                                        <td></td>
+                                        <td>R$ 43,00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td><strong>Total:</strong></td>
+                                        <td>R$ 129,00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
-                    <br/>
-                    <div class="row text-center">
-                        <p><a href="#" title="Voltar">Voltar</a></p>
+                    <div class="col-md-offset-4 col-md-4 text-center">
+                        <form id="form-comprar-laudo" method="POST" action="action.php">
+                            <input type="hidden" id="hidden-nome" value="Georgi Facello" name="hidden-nome">
+                            <input type="hidden" id="hidden-codigo-produto" value="laudo-plus" name="hidden-codigo-produto">
+                            <!--<input type="hidden" id="hidden-email" value="c06458599158349541735@sandbox.pagseguro.com.br" name="txt-email">-->
+                            <input type="hidden" id="hidden-email" value="leandro@sandbox.pagseguro.com.br" name="txt-email">
+                            <button id="comprar-plus" class="btn btn-primary btn-lg">Comprar com PagSeguro</button>
+                            <div class="mensagem hidden col-md-12" role="alert"></div>
+                        </form>
                     </div>
                 </div>
             </div>
