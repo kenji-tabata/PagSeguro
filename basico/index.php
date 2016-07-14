@@ -117,6 +117,20 @@
                         <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
                         <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                     </div>
+                    <div class=" col-md-offset-3 col-md-6">
+                        <br/>
+                        <p class="text-center"><strong>Pague com segurança no PagSeguro!</strong></p>
+                        <a href="https://www.pagseguro.uol.com.br" title="Site do PagSeguro" target="_blank">
+                            <img
+                                src="https://stc.pagseguro.uol.com.br/public/img/banners/pagamento/todos_animado_550_50.gif"
+                                alt="Logotipos de meios de pagamento do PagSeguro"
+                                title="Este site aceita pagamentos com Visa, MasterCard, Diners, American Express,
+                                Hipercard, Aura, Elo, PLENOCard, PersonalCard, BrasilCard, FORTBRASIL, Cabal, Mais!,
+                                Avista, Grandcard, Sorocred, Bradesco, Itaú, Banco do Brasil, Banrisul, Banco HSBC,
+                                saldo em conta PagSeguro e boleto."
+                            >
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
