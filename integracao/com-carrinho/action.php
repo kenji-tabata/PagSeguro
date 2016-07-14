@@ -17,7 +17,21 @@ $xml = '<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
         <items>
             <item>
                 <id>0001</id>
-                <description>Laudo Plus - nome</description>
+                <description>Laudo Plus - Georgi Facello</description>
+                <amount>43.00</amount>
+                <quantity>1</quantity>
+                <weight>0</weight>
+            </item>
+            <item>
+                <id>0002</id>
+                <description>Laudo Plus - Marcel Facello</description>
+                <amount>43.00</amount>
+                <quantity>1</quantity>
+                <weight>0</weight>
+            </item>
+            <item>
+                <id>0003</id>
+                <description>Laudo Plus - Mara Facello</description>
                 <amount>43.00</amount>
                 <quantity>1</quantity>
                 <weight>0</weight>

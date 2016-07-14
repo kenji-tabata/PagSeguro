@@ -1,5 +1,7 @@
 <?php
 
+header("access-control-allow-origin: https://sandbox.pagseguro.uol.com.br");
+
 if (isset($_POST['notificationType']) && $_POST['notificationType'] == 'transaction') {
     $email = 'leandro.kenji@hotmail.com';
     $token = 'D6FF321275C14EBCA501A2A919DEDEC5 ';
