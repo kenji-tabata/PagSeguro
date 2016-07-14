@@ -23,6 +23,11 @@
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
+                <div class="voltar">
+                    <a href="javascript:window.history.go(-1)" title="Voltar">
+                        <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+                    </a>
+                </div>
                 <a class="navbar-brand" href="#" title="Dom Brasil">
                     <img alt="Brand" src="imagens/logo.png">
                 </a>
@@ -72,30 +77,46 @@
                     <div class="page-header">
                         <h3>Resumo do pedido!</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-3">
-                            <p><strong>Item</strong></p>
-                            <p>Laudo Plus</p>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <p><strong>Valor</strong></p>
-                            <p>R$ 43,00</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-4 text-center">
-                                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-                                <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
-                                <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-                                <input type="hidden" name="code" value="95793099727226D444402F9E06706C38" />
-                                <input type="hidden" name="iot" value="button" />
-                                <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/99x61-comprar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-                                </form>
-                                <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
-                                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-                            </div>
+                    <div class="col-md-offset-1 col-md-10">
+                        <div class="table-responsive">
+                            <table class="table table-striped table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Item</th>
+                                        <th></th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Laudo Plus - Georgi Facello</td>
+                                        <td></td>
+                                        <td>R$ 43,00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td><strong>Total:</strong></td>
+                                        <td>R$ 43,00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
-                    <br/>
+                    <div class="col-md-offset-4 col-md-4 text-center">
+                        <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                        <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                        <input type="hidden" name="code" value="95793099727226D444402F9E06706C38" />
+                        <input type="hidden" name="iot" value="button" />
+                        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/99x61-comprar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                        </form>
+                        <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+                        <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                    </div>
                 </div>
             </div>
         </div>
