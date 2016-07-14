@@ -31,14 +31,10 @@
                 <a class="navbar-brand" href="#" title="Dom Brasil">
                     <img alt="Brand" src="views/imagens/logo.png">
                 </a>
-                <p class="navbar-text navbar-right">
-                    <a href="#" title="Voltar">
-                        <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Voltar
-                    </a>
-                </p>
+                <p class="navbar-text navbar-right">&nbsp;</p>
             </div>
         </nav>
-                    
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -54,13 +50,13 @@
                 </div>
                 <div class="col-md-7">
                     <p class="text-justify">
-                        Diferentemente do perfil comportamental on-line que contém apenas 4 características do seu perfil, 
-                        o <strong>Perfil completo</strong> contém texto mais abrangente e mais explicativo que é comumente 
-                        utilizado como documentação de processos. 
+                        Diferentemente do perfil comportamental on-line que contém apenas 4 características do seu perfil,
+                        o <strong>Perfil completo</strong> contém texto mais abrangente e mais explicativo que é comumente
+                        utilizado como documentação de processos.
                     </p>
                     <p class="text-justify">
-                        O <strong>Perfil completo</strong>, também denominado como laudo Plus, oferecem 15 características comportamentais, um 
-                        dicionário especificando cada uma dessas características e estilo dos profissionais e ainda, 
+                        O <strong>Perfil completo</strong>, também denominado como laudo Plus, oferecem 15 características comportamentais, um
+                        dicionário especificando cada uma dessas características e estilo dos profissionais e ainda,
                         informa o grau de cada nível.
                     </p>
                     <p class="text-justify">
@@ -115,9 +111,24 @@
                             <input type="hidden" id="hidden-nome" value="Georgi Facello" name="hidden-nome">
                             <input type="hidden" id="hidden-codigo-produto" value="laudo-plus" name="hidden-codigo-produto">
                             <input type="hidden" id="hidden-email" value="c06458599158349541735@sandbox.pagseguro.com.br" name="txt-email">
-                            <button id="comprar-plus" class="btn btn-primary btn-lg">Comprar com PagSeguro</button>
+                            <!--<button id="comprar-plus" class="btn btn-primary btn-lg">Comprar com PagSeguro</button>-->
+                            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/99x61-comprar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
                             <div class="mensagem hidden col-md-12" role="alert"></div>
                         </form>
+                    </div>
+                    <div class=" col-md-offset-3 col-md-6">
+                        <br/>
+                        <p class="text-center"><strong>Pague com segurança no PagSeguro!</strong></p>
+                        <a href="https://www.pagseguro.uol.com.br" title="Site do PagSeguro" target="_blank">
+                            <img
+                                src="https://stc.pagseguro.uol.com.br/public/img/banners/pagamento/todos_animado_550_50.gif"
+                                alt="Logotipos de meios de pagamento do PagSeguro"
+                                title="Este site aceita pagamentos com Visa, MasterCard, Diners, American Express,
+                                Hipercard, Aura, Elo, PLENOCard, PersonalCard, BrasilCard, FORTBRASIL, Cabal, Mais!,
+                                Avista, Grandcard, Sorocred, Bradesco, Itaú, Banco do Brasil, Banrisul, Banco HSBC,
+                                saldo em conta PagSeguro e boleto."
+                            >
+                        </a>
                     </div>
                 </div>
             </div>
