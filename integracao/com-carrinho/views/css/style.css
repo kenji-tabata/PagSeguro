@@ -63,6 +63,16 @@ body {
     font-weight: 600;
 }
 
+.voltar {
+    position: absolute;
+    top: 28px;
+    font-size: 20px;
+}
+
+.voltar a {
+    color: #FFF;
+}
+
 @media (min-width: 768px) {
     .navbar-brand {
         padding: 20px 15px;
@@ -92,5 +102,8 @@ body {
     }
     .navbar-default .navbar-text {
         padding: 5px;
+    }
+    .voltar {
+        top: 14px;
     }
 }
