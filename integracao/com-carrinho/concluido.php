@@ -1,28 +1,27 @@
 <?php
 
 /**
- * 
+ *
  */
-
-
-if(isset($_GET['transacao'])) {
+if (isset($_GET['transacao'])) {
     $email = 'leandro.kenji@hotmail.com';
     $token = 'D6FF321275C14EBCA501A2A919DEDEC5 ';
     $notificationCode = $_GET['transacao'];
     $wsdl = "https://ws.sandbox.pagseguro.uol.com.br/v3/transactions/$notificationCode?email=$email&token=$token";
-    
+
     $curl = curl_init($wsdl);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    $transaction= curl_exec($curl);
+    $transaction = curl_exec($curl);
     curl_close($curl);
 
-    if($transaction == 'Unauthorized'){
+    if ($transaction == 'Unauthorized') {
         var_dump($transaction);
-        exit;//Mantenha essa linha
+        exit; //Mantenha essa linha
     }
     $transaction = simplexml_load_string($transaction);
-    switch ($transaction->status){
+
+    switch ($transaction->status) {
         case 1:
             echo "<h1>Aguardando pagamento</h1>";
             break;
