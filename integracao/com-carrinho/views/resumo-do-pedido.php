@@ -105,9 +105,24 @@
                             <input type="hidden" id="hidden-codigo-produto" value="laudo-plus" name="hidden-codigo-produto">
                             <!--<input type="hidden" id="hidden-email" value="c06458599158349541735@sandbox.pagseguro.com.br" name="txt-email">-->
                             <input type="hidden" id="hidden-email" value="leandro@sandbox.pagseguro.com.br" name="txt-email">
-                            <button id="comprar-plus" class="btn btn-primary btn-lg">Comprar com PagSeguro</button>
+                            <!--<button id="comprar-plus" class="btn btn-primary btn-lg">Comprar com PagSeguro</button>-->
+                            <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
                             <div class="mensagem hidden col-md-12" role="alert"></div>
                         </form>
+                    </div>
+                    <div class=" col-md-offset-3 col-md-6">
+                        <br/>
+                        <p class="text-center"><strong>Pague com segurança no PagSeguro!</strong></p>
+                        <a href="https://www.pagseguro.uol.com.br" title="Site do PagSeguro" target="_blank">
+                            <img
+                                src="https://stc.pagseguro.uol.com.br/public/img/banners/pagamento/todos_animado_550_50.gif"
+                                alt="Logotipos de meios de pagamento do PagSeguro"
+                                title="Este site aceita pagamentos com Visa, MasterCard, Diners, American Express,
+                                Hipercard, Aura, Elo, PLENOCard, PersonalCard, BrasilCard, FORTBRASIL, Cabal, Mais!,
+                                Avista, Grandcard, Sorocred, Bradesco, Itaú, Banco do Brasil, Banrisul, Banco HSBC,
+                                saldo em conta PagSeguro e boleto."
+                            >
+                        </a>
                     </div>
                 </div>
             </div>
